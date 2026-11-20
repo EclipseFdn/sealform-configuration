@@ -1,0 +1,20 @@
+name: dt.esmf
+repositories:
+  - https://github.com/eclipse-esmf/esmf-aspect-model-editor
+  - https://github.com/eclipse-esmf/esmf-aspect-model-editor-backend
+trusted_build_systems:
+  - GitHub.com
+artifact_configurations:
+  exe-in-zip:
+    file: artifact-configurations/all-exe-in-zip.xml
+default_artifact_configuration: exe-in-zip
+ci_users:
+  dt.esmf-bot:
+    signing_policies:
+      - release-signing
+      - test-signing
+signing_policies:
+  release-signing:
+    extends: signing-policies/trusted-release.yaml
+  test-signing:
+    extends: signing-policies/trusted-test.yaml

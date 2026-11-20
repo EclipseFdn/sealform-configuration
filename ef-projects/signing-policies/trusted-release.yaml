@@ -1,0 +1,6 @@
+purpose: release
+certificate: codesigning-eclipse-foundation-release
+trusted_build_system_verification: true
+origin_verification:
+  branches:
+    - '**'

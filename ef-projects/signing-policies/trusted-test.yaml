@@ -1,0 +1,6 @@
+purpose: test
+certificate: codesigning-eclipse-foundation-test
+trusted_build_system_verification: true
+origin_verification:
+  branches:
+    - '**'

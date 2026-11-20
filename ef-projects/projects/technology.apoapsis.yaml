@@ -1,0 +1,21 @@
+name: technology.apoapsis
+repositories:
+  - https://github.com/eclipse-apoapsis/ort-server
+trusted_build_systems:
+  - GitHub.com
+artifact_configurations:
+  exe-in-zip:
+    file: artifact-configurations/all-exe-in-zip.xml
+  msi:
+    file: artifact-configurations/msi.xml
+default_artifact_configuration: msi
+ci_users:
+  technology.apoapsis-bot:
+    signing_policies:
+      - release-signing
+      - test-signing
+signing_policies:
+  release-signing:
+    extends: signing-policies/trusted-release.yaml
+  test-signing:
+    extends: signing-policies/trusted-test.yaml

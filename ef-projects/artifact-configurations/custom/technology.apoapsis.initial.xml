@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<artifact-configuration xmlns="http://signpath.io/artifact-configuration/v1">
+  <msi-file> <!-- optionally, add metadata constraints: author, subject -->
+    <authenticode-sign />
+  </msi-file>
+</artifact-configuration>
