@@ -12,8 +12,14 @@ ci_users:
     signing_policies:
       - release-signing
       - test-signing
+      - apple-application-release
+      - apple-installer-release
 signing_policies:
   release-signing:
     extends: signing-policies/trusted-release.yaml
   test-signing:
     extends: signing-policies/trusted-test.yaml
+  apple-application-release:
+    extends: signing-policies/apple-application-release.yaml
+  apple-installer-release:
+    extends: signing-policies/apple-installer-release.yaml

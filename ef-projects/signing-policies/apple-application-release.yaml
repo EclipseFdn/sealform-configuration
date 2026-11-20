@@ -1,0 +1,6 @@
+purpose: release
+certificate: apple-developer-id-application
+trusted_build_system_verification: true
+origin_verification:
+  branches:
+    - '**'
