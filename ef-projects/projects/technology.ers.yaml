@@ -5,7 +5,7 @@ trusted_build_systems:
   - GitHub.com
 artifact_configurations:
   exe-in-zip:
-    file: artifact-configurations/all-exe-in-zip.xml
+    file: artifact-configurations/exe-in-zip.xml
 default_artifact_configuration: exe-in-zip
 ci_users:
   technology.ers-bot:
